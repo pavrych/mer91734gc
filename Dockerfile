@@ -4,7 +4,7 @@ MAINTAINER	Eugene <1@1.net>
 ARG home=/
 ENV home=$home
 
-RUN	apt-get update && apt-get install -y git wget build-essential pkg-config cmake unzip python python-zmq zlib1g-dev wget libcurl4-openssl-dev automake curl libjansson-dev autotools-dev libtool 
+RUN	apt-get update && apt-get install -y git wget build-essential pkg-config cmake unzip python python-zmq zlib1g-dev wget libcurl4-openssl-dev automake curl libjansson-dev autotools-dev libtool libboost-all-dev
 RUN git clone https://github.com/meritlabs/merit-miner
 
 WORKDIR /merit-miner
